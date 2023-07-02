@@ -61,7 +61,7 @@
         </td>
 
         <!-- Percent Change -->
-        <td class="rounded-r-box">
+        <td>
           {#if item.pChange < 0}
             <span class="badge badge-error badge-lg text-gray-900">
               {-item.pChange.toFixed(2)}%
@@ -78,9 +78,9 @@
         </td>
 
         <!-- Chart -->
-        <!-- <td class="rounded-r-box">
+        <td class="rounded-r-box">
           <Chart id={i} />
-        </td> -->
+        </td>
       </tr>
     {/each}
   </tbody>

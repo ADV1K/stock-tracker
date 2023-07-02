@@ -20,18 +20,19 @@
   }
   console.log(points);
 
-  let ss = `#chart-${id}`;
-  console.log(ss);
-  const parent = document.querySelector(ss);
-  console.log(parent);
-  const canvas = document.createElement("canvas");
-  canvas.setAttribute("height", "20");
-  // canvas.setAttribute("width", "500");
-  // canvas.setAttribute("id", "myCanvas");
-  parent.appendChild(canvas);
+
 
   let myChart;
   onMount(() => {
+    let ss = `#chart-${id}`;
+    console.log(ss);
+    const parent = document.querySelector(ss);
+    console.log(parent);
+    const canvas = document.createElement("canvas");
+    canvas.setAttribute("height", "20");
+    // canvas.setAttribute("width", "500");
+    // canvas.setAttribute("id", "myCanvas");
+    parent.appendChild(canvas);
     const ctx = canvas.getContext("2d");
     myChart = new Chart(ctx, {
       type: "line",
