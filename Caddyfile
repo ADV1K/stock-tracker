@@ -1,0 +1,7 @@
+:8000 {
+	log {
+		level DEBUG
+		output stdout
+	}
+	reverse_proxy httpbin.org:443
+}
